@@ -7,7 +7,7 @@ class Profesor(models.Model):
     email = models.EmailField(max_length=50)
     
     def __str__(self):
-        return f'{self.nombre_profesor}, {self.apellido_profesor} | Email {self.email}'
+        return f'{self.apellido_profesor}, {self.nombre_profesor} | E-mail: {self.email}'
 
     
 class Alumno(models.Model):
@@ -16,7 +16,7 @@ class Alumno(models.Model):
     email = models.EmailField(max_length=50)
     
     def __str__(self):
-        return f'{self.nombre_alumno}, {self.apellido_alumno}'
+        return f'{self.apellido_alumno}, {self.nombre_alumno}'
     
 class Materias(models.Model):
     nombre_materia = models.CharField(max_length=40)
