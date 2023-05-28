@@ -2,4 +2,11 @@
 
 {% block CONTENIDO %}
     <h1>Bienvenidos a mi proyecto!</h1>
+
+<a href="{% url 'inicio:crear_profesor' %}">Crear Profesor</a>
+<br>
+<a href="{% url 'inicio:crear_alumno' %}">Crear Alumno</a>
+<br>
+<a href="{% url 'inicio:crear_materias' %}">Crear Materia</a>
+
 {% endblock CONTENIDO %}
