@@ -7,6 +7,7 @@ class ProfesorForm(forms.ModelForm):
         model = models.Profesor
         fields = '__all__'
         
+        
 class AlumnoForm(forms.ModelForm):
     class Meta:
         model = models.Alumno
